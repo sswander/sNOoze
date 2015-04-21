@@ -1,0 +1,65 @@
+body{
+	background: -webkit-linear-gradient(#24484C, #699499); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#24484C, #699499); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#24484C, #699499); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#24484C, #699499); /* Standard syntax */
+	color: #E5DB93;
+}
+
+nav {
+	opacity: 0;
+}
+
+/********************/
+/* General          */
+/********************/
+
+.main-text {
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: -30%;
+}
+
+a.button.action {
+	color: #E5B4CF;
+	border: solid 1px #E5B4CF;
+}
+
+a.button.back {
+	color: #E5B4CF;
+}
+
+a.button.back::before {
+	background-color: #E5B4CF;
+}
+
+a.button.action.toggleAlarm {
+	margin-top: 20px;
+}
+
+#input-text {
+	background-color: #E5B4CF;
+	color: #24484C;
+	font-size:24px;
+	width: 70%;
+	border-radius: 5px;
+}
+
+#dismiss-button {
+	margin-top: 20%;
+	border: solid 3px #E5B4CF;
+}
+
+/********************/
+/* Settings         */
+/********************/
+
+#volume-slider {
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.list>li {
+	background-color: #24484C !important;
+}

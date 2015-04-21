@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>sNOoze</title>
+    
+  <link rel="stylesheet" href="css/chui-ios-3.5.2.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body><!--class='hideGlobalNav'-->
+	<nav class='navigable current'>
+	   <h1>sNOoze</h1>
+	</nav>
+	<article id="home" class="navigable current">
+		<div class='main-text' id="homeScreen">
+		</div>
+	</article>
+	
+	<nav class='next'>
+		<a class='button back' id="backTo-home">Back</a>
+	   <h1>Set Alarm</h1>
+	</nav>
+	<article id='settings' class='next'>
+		<section>
+			<ul class="list">
+				<li data-goto="time-setter" class="comp">
+					<div>
+						<h3>Time</h3>
+					</div>
+					<aside>
+						<span class='date-time' id="alarm-time"></span>
+						<span class='nav'></span>
+					</aside>
+				</li>
+				<li data-goto="audio-list" class="comp">
+					<div>
+						<h3>Alarm sounds</h3>
+					</div>
+					<aside>
+						<h4 id='audio-name'></h4>
+						<span class='nav'></span>
+					</aside>
+				</li>
+				<li>
+					<label>Volume:</label>
+					<input type="range" id="volume-slider" value="80" min="0" max="100">
+				</li>
+			</ul>
+			<div id='done-button-div'>
+				
+			</div>
+		</section>
+	</article>
+	
+	<nav class='next'>
+		<a class='button back' id="backTo-settings">Back</a>
+	   <h1>Set Time</h1>
+	</nav>
+	<article id='time-setter' class='next'>
+		<section>
+			<ul class='list'>
+				<li>
+					Set alarm time: <input type="time" name="alarm_time" id="alarm_time">
+				</li>
+			</ul>
+		</section>
+	</article>
+	
+	<nav class='next'>
+		<a class='button back' id="music-back">Back</a>
+	   <h1>Alarm sound</h1>
+	</nav>
+	<article id='audio-list' class='next'>
+		<section>
+			<ul class='list' id='song-list'>
+			</ul>
+		</section>
+    </article>
+	
+	<nav class='next'>
+	   <h1 id='wake-up-time'></h1>
+	</nav>
+	<article id='wake-up-view' class='next'>
+		<div class='main-text' style="text-align: center">		
+			<h2>Congratulations, you are still alive!</h2>
+			<h2>What is your goal of the day?</h2>
+			<input type='text' id='input-text' placeholder='type a goal to dismiss' size='40'></input>
+			<a class="button action" id='dismiss-button' ><strong>Dismiss Alarm</strong></a>
+		</div>
+    </article>
+    
+    <script src="js/jquery-2.0.3.js"></script>
+	<script src="js/buzz.min.js"></script>
+    <script src="js/chui-3.5.2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
