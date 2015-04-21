@@ -5,11 +5,3 @@ It's a simple app and self explanatory. Each of the pages are demarcated by the 
 For javascript, I use jquery for the dynamic display of contents (updated time and song title in settings page once user decides on those), toggle alarm button and so on. The volume button works too, it affects audio playback volume. I also used an external javascript, buzz.js to manage audio playbacks and save some headaches.
 
 The app is quite usable as of now, it's fairly simple, wishes to help people wake up with the right mindset to face the day and does just that one thing. No gimmicks. No snooze.
-
-/* rant
-
-ChocChip UI is not the nicest framework out there. It is fairly easy to use and start with, but the documentation is poor and I had to trace the demo's sources as well as the choc chip's css and js line by line to actually know what it is about. I had my fair share of lack of sleep and frustration because of this. For basic app, it could work, but it look very boring. Without a good html/js knowledge students in cs3240 won't be able to create interesting things using choc chip UI. Possible suggestions in future would be using other frameworks that are more well-documented, or focusing on html/css/js instead of mobile frameworks, or conducting help sessions for these labs. Although in the end I think these labs has not much link to whatever we learnt in 3240 except the design part, and these labs can sadly feel like extra baggages of 5 percent assignments (from what I gather personally and among my friends). 
-
-Thank you for reading :)
-
-end rant */
